@@ -23,6 +23,7 @@
     <modules>
         <module>demo-cglib</module>
         <module>demo-avro</module>
+        <module>demo-code</module>
     </modules>
 
     <dependencies>
