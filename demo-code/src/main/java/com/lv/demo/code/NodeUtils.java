@@ -16,6 +16,18 @@ public class NodeUtils {
         firstTail.next = null;//断开
         Node merge = merge(node, reverse);
         System.out.println(merge);
+        //test find tail
+        System.out.println(findTail(NodeBuilder.create(1, 2, 3, 4, 5)));
+    }
+
+    private static Node findTail(Node head) {
+        Node pre = null;
+        Node cur = head;
+        while (cur != null) {
+            pre = cur;
+            cur = cur.next;
+        }
+        return pre;
     }
 
     private static Node merge(Node h1, Node h2) {
